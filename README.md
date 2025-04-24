@@ -1,85 +1,77 @@
-# 🚀 **Space-X Rocket Launch Analysis**
 
-This repository contains a detailed exploratory data analysis (EDA) of Space-X's rocket launch data. The project investigates the **success rates**, **impact of payload mass**, and **influence of launch sites** on mission outcomes.
+# 🚀 **Space-X Rocket Launch Analysis (Databricks)**
+
+This repository contains a detailed **Exploratory Data Analysis (EDA)** of Space-X's rocket launch data performed using **Databricks Notebooks**. The project explores **mission success rates**, **payload mass impact**, and the **influence of launch time and company** using powerful big data tools.
 
 ---
 
 ## 📁 **Project Structure**
 
-- **`Space-X Rocket Analysis.ipynb`** – Main Jupyter Notebook with full analysis and visualizations.  
-- **`README.md`** – Project overview and instructions.
+- **`Space-X Rocket Analysis.ipynb`** – Exported Databricks notebook with full analysis and visualizations.  
+- **`README.md`** – Project overview, instructions, and insights.
 
 ---
 
 ## 📊 **Key Features**
 
-- 📌 **Data Cleaning & Wrangling** using `python` and `spark`
-- 📈 **Visualizations** with `DataBricks Notebook`
-- 🔍 **Launch Success Analysis** by:
-  - Mission Status
-  - Rocket Status
-  - TimeOfDay
-  - Company
-- 🔗 **Correlation Insights** using Bar Plot, Pie Charts, and more
+- 📌 **Data Cleaning & Wrangling** using `PySpark` and `Python`
+- 📈 **Visualizations** built inside **Databricks Notebooks**
+- 🔍 **Mission Success Analysis** by:
+  - 🚦 Mission Status (Success / Failure/ Partial Failure/ Pre-launch Failure)
+  - 🚀 Rocket Status (Active / Retired)
+  - 🕒 Time of Day (Morning / Evening / Night)
+  - 🏢 Company
+
+- 🔗 **Insights** presented using:
+  - Bar Plots
+  - Pie Charts
 
 ---
 
 ## 🧰 **Tools & Technologies Used**
 
+- **Databricks Notebook**
+- **Apache Spark (PySpark)**
 - **Python 3**
-- **DataBricks Notebook**
-- **Spark**
-- **GitHub**
 - **Databricks SQL**
+- **GitHub**
+
 ---
 
 ## 📦 **Dataset**
 
-- The data is sourced from **Space-X's public launch data**.
-- You may retrieve the data from GitHub.
+- The dataset is derived from **Space-X's public launch data**.
+- It can be uploaded to **DBFS (Databricks File System)** or accessed from **GitHub**.
 
 ---
 
-## ⚙️ **Getting Started**
+## ⚙️ **Running This Project on Databricks**
 
-To run this project locally:
+To use this notebook inside Databricks:
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Jasper1007J/DataBricksMounting.git
-   cd space-x-rocket-analysis
-   ```
-
-2. **(Optional) Create a virtual environment**
-   ```bash
-   python -m venv env
-   source env/bin/activate  # On Windows: env\Scripts\activate
-   ```
-
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Launch Jupyter Notebook**
-   ```bash
-   jupyter notebook
-   ```
+1. 🔗 **Open your Databricks Workspace**.
+2. 📁 **Import the notebook** (`Space-X Rocket Analysis.ipynb`) using:
+   - *Workspace > Import > File*
+3. 💻 **Attach it to a running cluster**.
+4. 📂 **Upload the dataset** to DBFS:
+   - *Data > Add Data > Upload File*  
+   - Or mount from external sources like GitHub, Azure, or AWS
+5. ▶️ **Run all notebook cells** to see data exploration and visualizations.
 
 ---
 
 ## ✅ **Output Highlights**
 
-- 🚀 Identify **launch sites with the highest success rates**
-- 📦 Analyze how **payload mass affects mission success**
-- 🧠 Discover how **booster versions and orbit types** influence outcomes
+- 🚀 Find out which **mission types and companies** are most successful
+- ⏱️ Evaluate **Time of Day's influence** on launch success
+- 🛰️ Compare **rocket status and mission outcomes**
 
 ---
 
-## 🧠 **Future Improvements**
+## 🧠 **Future Enhancements**
 
-- 🔄 Integrate **real-time Space-X API**
-- 🌐 Deploy an **interactive dashboard** with Dash or Streamlit
-- 🧹 Automate **data preprocessing** with custom pipelines
+- 🔄 Integration with **live Space-X API** for real-time analysis using Delta Live Tables
+- 📊 Dashboard creation using **Power BI**
+- ⚙️ Scheduled notebook runs via **Databricks Jobs**
 
 ---
