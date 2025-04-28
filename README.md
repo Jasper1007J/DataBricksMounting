@@ -19,7 +19,7 @@ This repository contains a detailed **Exploratory Data Analysis (EDA)** of Space
 - 🔍 **Mission Success Analysis** by:
   - 🚦 Mission Status (Success / Failure/ Partial Failure/ Pre-launch Failure)
   - 🚀 Rocket Status (Active / Retired)
-  - 🕒 Time of Day (Morning / Evening / Night)
+
   - 🏢 Company
 
 - 🔗 **Insights** presented using:
